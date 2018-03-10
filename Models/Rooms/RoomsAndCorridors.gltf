@@ -1,0 +1,468 @@
+{
+    "accessors" : [
+        {
+            "bufferView" : 0, 
+            "componentType" : 5121, 
+            "count" : 216, 
+            "max" : [
+                135
+            ], 
+            "min" : [
+                0
+            ], 
+            "type" : "SCALAR"
+        }, 
+        {
+            "bufferView" : 1, 
+            "componentType" : 5126, 
+            "count" : 136, 
+            "max" : [
+                1.100000023841858, 
+                1.0, 
+                1.0
+            ], 
+            "min" : [
+                -1.100000023841858, 
+                -1.0, 
+                -1.0
+            ], 
+            "type" : "VEC3"
+        }, 
+        {
+            "bufferView" : 2, 
+            "componentType" : 5126, 
+            "count" : 136, 
+            "max" : [
+                1.0, 
+                1.0, 
+                0.4103647768497467
+            ], 
+            "min" : [
+                -1.0, 
+                -1.0, 
+                -0.4103647768497467
+            ], 
+            "type" : "VEC3"
+        }, 
+        {
+            "bufferView" : 3, 
+            "componentType" : 5121, 
+            "count" : 24, 
+            "max" : [
+                15
+            ], 
+            "min" : [
+                0
+            ], 
+            "type" : "SCALAR"
+        }, 
+        {
+            "bufferView" : 4, 
+            "componentType" : 5126, 
+            "count" : 16, 
+            "max" : [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "min" : [
+                -1.0, 
+                -1.0, 
+                -1.0
+            ], 
+            "type" : "VEC3"
+        }, 
+        {
+            "bufferView" : 5, 
+            "componentType" : 5126, 
+            "count" : 16, 
+            "max" : [
+                1.0, 
+                1.0, 
+                -0.0
+            ], 
+            "min" : [
+                -1.0, 
+                -1.0, 
+                -0.0
+            ], 
+            "type" : "VEC3"
+        }, 
+        {
+            "bufferView" : 6, 
+            "componentType" : 5121, 
+            "count" : 54, 
+            "max" : [
+                35
+            ], 
+            "min" : [
+                0
+            ], 
+            "type" : "SCALAR"
+        }, 
+        {
+            "bufferView" : 7, 
+            "componentType" : 5126, 
+            "count" : 36, 
+            "max" : [
+                1.0, 
+                0.5, 
+                1.0
+            ], 
+            "min" : [
+                -1.0, 
+                0.0, 
+                -1.0
+            ], 
+            "type" : "VEC3"
+        }, 
+        {
+            "bufferView" : 8, 
+            "componentType" : 5126, 
+            "count" : 36, 
+            "max" : [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "min" : [
+                -1.0, 
+                -0.0, 
+                -1.0
+            ], 
+            "type" : "VEC3"
+        }, 
+        {
+            "bufferView" : 9, 
+            "componentType" : 5121, 
+            "count" : 156, 
+            "max" : [
+                63
+            ], 
+            "min" : [
+                0
+            ], 
+            "type" : "SCALAR"
+        }, 
+        {
+            "bufferView" : 10, 
+            "componentType" : 5126, 
+            "count" : 64, 
+            "max" : [
+                1.0, 
+                0.75, 
+                1.0
+            ], 
+            "min" : [
+                -1.0, 
+                0.0, 
+                -1.0
+            ], 
+            "type" : "VEC3"
+        }, 
+        {
+            "bufferView" : 11, 
+            "componentType" : 5126, 
+            "count" : 64, 
+            "max" : [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "min" : [
+                -1.0, 
+                -1.0, 
+                -1.0
+            ], 
+            "type" : "VEC3"
+        }, 
+        {
+            "bufferView" : 12, 
+            "componentType" : 5121, 
+            "count" : 540, 
+            "max" : [
+                200
+            ], 
+            "min" : [
+                0
+            ], 
+            "type" : "SCALAR"
+        }, 
+        {
+            "bufferView" : 13, 
+            "componentType" : 5126, 
+            "count" : 201, 
+            "max" : [
+                1.0, 
+                0.0, 
+                1.0
+            ], 
+            "min" : [
+                -1.0, 
+                -0.25, 
+                -1.0
+            ], 
+            "type" : "VEC3"
+        }, 
+        {
+            "bufferView" : 14, 
+            "componentType" : 5126, 
+            "count" : 201, 
+            "max" : [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "min" : [
+                -1.0, 
+                0.0, 
+                -1.0
+            ], 
+            "type" : "VEC3"
+        }
+    ], 
+    "asset" : {
+        "generator" : "Khronos Blender glTF 2.0 exporter", 
+        "version" : "2.0"
+    }, 
+    "bufferViews" : [
+        {
+            "buffer" : 0, 
+            "byteLength" : 216, 
+            "byteOffset" : 0, 
+            "target" : 34963
+        }, 
+        {
+            "buffer" : 0, 
+            "byteLength" : 1632, 
+            "byteOffset" : 216, 
+            "target" : 34962
+        }, 
+        {
+            "buffer" : 0, 
+            "byteLength" : 1632, 
+            "byteOffset" : 1848, 
+            "target" : 34962
+        }, 
+        {
+            "buffer" : 0, 
+            "byteLength" : 24, 
+            "byteOffset" : 3480, 
+            "target" : 34963
+        }, 
+        {
+            "buffer" : 0, 
+            "byteLength" : 192, 
+            "byteOffset" : 3504, 
+            "target" : 34962
+        }, 
+        {
+            "buffer" : 0, 
+            "byteLength" : 192, 
+            "byteOffset" : 3696, 
+            "target" : 34962
+        }, 
+        {
+            "buffer" : 0, 
+            "byteLength" : 54, 
+            "byteOffset" : 3888, 
+            "target" : 34963
+        }, 
+        {
+            "buffer" : 0, 
+            "byteLength" : 432, 
+            "byteOffset" : 3944, 
+            "target" : 34962
+        }, 
+        {
+            "buffer" : 0, 
+            "byteLength" : 432, 
+            "byteOffset" : 4376, 
+            "target" : 34962
+        }, 
+        {
+            "buffer" : 0, 
+            "byteLength" : 156, 
+            "byteOffset" : 4808, 
+            "target" : 34963
+        }, 
+        {
+            "buffer" : 0, 
+            "byteLength" : 768, 
+            "byteOffset" : 4964, 
+            "target" : 34962
+        }, 
+        {
+            "buffer" : 0, 
+            "byteLength" : 768, 
+            "byteOffset" : 5732, 
+            "target" : 34962
+        }, 
+        {
+            "buffer" : 0, 
+            "byteLength" : 540, 
+            "byteOffset" : 6500, 
+            "target" : 34963
+        }, 
+        {
+            "buffer" : 0, 
+            "byteLength" : 2412, 
+            "byteOffset" : 7040, 
+            "target" : 34962
+        }, 
+        {
+            "buffer" : 0, 
+            "byteLength" : 2412, 
+            "byteOffset" : 9452, 
+            "target" : 34962
+        }
+    ], 
+    "buffers" : [
+        {
+            "byteLength" : 11864, 
+            "uri" : "RoomsAndCorridors.bin"
+        }
+    ], 
+    "meshes" : [
+        {
+            "name" : "Cube.000", 
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "NORMAL" : 2, 
+                        "POSITION" : 1
+                    }, 
+                    "indices" : 0
+                }
+            ]
+        }, 
+        {
+            "name" : "Cube.001", 
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "NORMAL" : 5, 
+                        "POSITION" : 4
+                    }, 
+                    "indices" : 3
+                }
+            ]
+        }, 
+        {
+            "name" : "Plane", 
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "NORMAL" : 8, 
+                        "POSITION" : 7
+                    }, 
+                    "indices" : 6
+                }
+            ]
+        }, 
+        {
+            "name" : "Plane.001", 
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "NORMAL" : 11, 
+                        "POSITION" : 10
+                    }, 
+                    "indices" : 9
+                }
+            ]
+        }, 
+        {
+            "name" : "Plane.003", 
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "NORMAL" : 14, 
+                        "POSITION" : 13
+                    }, 
+                    "indices" : 12
+                }
+            ]
+        }
+    ], 
+    "nodes" : [
+        {
+            "mesh" : 1, 
+            "name" : "corridorI", 
+            "scale" : [
+                2.0, 
+                2.0, 
+                8.0
+            ], 
+            "translation" : [
+                0.0, 
+                2.0, 
+                20.0
+            ]
+        }, 
+        {
+            "mesh" : 0, 
+            "name" : "corridorI.001", 
+            "scale" : [
+                2.0, 
+                2.0, 
+                8.0
+            ], 
+            "translation" : [
+                -10.0, 
+                2.0, 
+                20.0
+            ]
+        }, 
+        {
+            "mesh" : 2, 
+            "name" : "room2x2", 
+            "scale" : [
+                8.0, 
+                8.0, 
+                8.0
+            ]
+        }, 
+        {
+            "mesh" : 3, 
+            "name" : "room2x2.001", 
+            "scale" : [
+                8.0, 
+                8.0, 
+                8.0
+            ], 
+            "translation" : [
+                -20.0, 
+                0.0, 
+                -0.0
+            ]
+        }, 
+        {
+            "mesh" : 4, 
+            "name" : "room4x4", 
+            "scale" : [
+                16.0, 
+                16.0, 
+                16.0
+            ], 
+            "translation" : [
+                32.0, 
+                0.0, 
+                -0.0
+            ]
+        }
+    ], 
+    "scene" : 0, 
+    "scenes" : [
+        {
+            "name" : "Scene", 
+            "nodes" : [
+                4, 
+                1, 
+                3, 
+                0, 
+                2
+            ]
+        }
+    ]
+}
