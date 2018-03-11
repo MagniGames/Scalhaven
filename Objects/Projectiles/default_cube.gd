@@ -3,7 +3,7 @@ extends Spatial
 const BULLET_SPEED = 10
 const BULLET_DAMAGE = 15
 
-const KILL_TIMER = 4
+const KILL_TIMER = 2
 var timer = 0
 
 var hit_something = false

@@ -46,6 +46,7 @@ func getallnodes(node):
 			if (N.has_method("get_aabb")):
 				print(N.get_aabb())
 
+var guntimer = -1
 func _process(delta):
 	var dir = Vector3() # Where does the player intend to walk to
 	var cam_xform = $"./Camera".get_global_transform()
@@ -69,7 +70,9 @@ func _process(delta):
 
     # Firing the weapons
 	if Input.is_action_pressed("fire"):
-		get_node("weapon").get_child(0).fire_bullet()
+		if (guntimer < 0):
+			get_node("weapon").get_child(1).fire_bullet()
+		guntimer +=1
 
 	if (Input.is_action_just_released("debug")):
 		var allobjects = get_node("/root")
@@ -103,3 +106,9 @@ func _process(delta):
 	
 	if (is_on_floor() and Input.is_action_pressed("jump")):
 		vel.y = JUMP_SPEED
+	
+	if (guntimer > 0):
+		if (guntimer < 80):
+			guntimer += 1
+		else:
+			guntimer = -1

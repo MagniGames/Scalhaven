@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Models/Player/hand.gltf" type="PackedScene" id=1]
+
+[node name="Scene Root" instance=ExtResource( 1 )]
+
+[node name="Skeleton" parent="." index="0"]
+
+visible = false
+
+[node name="Hand Rig" parent="." index="1"]
+
+transform = Transform( -1.27952e-07, -1.81236e-13, -0.2, -3.09944e-07, 0.2, 1.7053e-14, 0.2, 3.09944e-07, -1.27952e-07, 0, 0, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Hand" parent="Hand Rig" index="0"]
+
+transform = Transform( -0.22741, 0.0156673, -0.237996, 0.112518, -0.2829, -0.126136, -0.210303, -0.168301, 0.18987, -0.00804674, 2.94266, 1.17034 )
+
+

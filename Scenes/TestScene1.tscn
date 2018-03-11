@@ -37,7 +37,7 @@ rings = 8
 radius = 1.0
 height = 1.0
 
-[node name="Scene Root" type="Node" index="0"]
+[node name="Scene Root" type="Node"]
 
 script = ExtResource( 1 )
 
