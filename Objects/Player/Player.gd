@@ -34,6 +34,18 @@ func _input(event):
 			
 			get_node(".").set_rotation(Vector3(deg2rad(pitch), deg2rad(yaw), 0));
 
+#debug
+func getallnodes(node):
+	for N in node.get_children():
+		if N.get_child_count() > 0:
+			if (N.has_method("get_aabb")):
+				print(N.get_aabb())
+			getallnodes(N)
+		else:
+		# Do something
+			if (N.has_method("get_aabb")):
+				print(N.get_aabb())
+
 func _process(delta):
 	var dir = Vector3() # Where does the player intend to walk to
 	var cam_xform = $"./Camera".get_global_transform()
@@ -54,7 +66,11 @@ func _process(delta):
 		running = true
 	else:
 		running = false
-		
+	
+	if (Input.is_action_just_released("debug")):
+		var allobjects = get_node("/root")
+		getallnodes(allobjects)
+	
 	dir.y = 0
 	dir = dir.normalized()
 	
