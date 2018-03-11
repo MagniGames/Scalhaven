@@ -10,6 +10,8 @@ func _ready():
 	# Initialization here
 	var pool = preload("res://Objects/Rooms/RoomsAndCorridors.scn")
 	var pool_node = pool.instance()
+	aabbnode = Node.new()
+	get_node("/root").add_child(aabbnode) #node for AABB check during scene generation
 	#var path = pool.get_state().get_node_path(0)
 	#getallnodes(get_node(path.get_name(0)))
 	getallnodes(pool_node)
@@ -61,6 +63,7 @@ var previous_room_offset = 16 #default 2x2
 var proposed_coord = null
 var proposed_coord_abs = null
 var proposed_placement = null
+var aabbnode = null
 		
 func recalculate_room_size(size):
 	if (size == 0): #2x2
@@ -133,6 +136,7 @@ func generateScene():
 		
 		proposed_coord = position+(direction_offset_cor+direction_offset_room)
 		proposed_coord_abs = proposed_coord + direction_offset_cor + direction_offset_room
+		#aabbnode.get_aabb()
 		proposed_placement = AABB(proposed_coord_abs,roomlist[0].get_aabb().size)
 		var proposed_allowed = false
 

@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Scenes/LevelGenerator.gd" type="Script" id=1]
 [ext_resource path="res://Objects/Player/Player.scn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/destructable.gd" type="Script" id=3]
 
 [sub_resource type="ArrayMesh" id=1]
 
@@ -23,6 +24,18 @@ surfaces/0 = {
 [sub_resource type="ConcavePolygonShape" id=2]
 
 data = PoolVector3Array( -8, 0, 8, -8, 0, -8, 8, 0, -8, -8, 0, 8, 8, 0, -8, 8, 0, 8, 2, 4, 8, 2, 0, 8, 8, 0, 8, 2, 4, 8, 8, 0, 8, 8, 4, 8, 8, 4, 8, 8, 0, 8, 8, 0, 2, 8, 4, 8, 8, 0, 2, 8, 4, 2, 8, 4, -2, 8, 0, -2, 8, 0, -8, 8, 4, -2, 8, 0, -8, 8, 4, -8, 8, 4, -8, 8, 0, -8, 2, 0, -8, 8, 4, -8, 2, 0, -8, 2, 4, -8, -2, 4, -8, -2, 0, -8, -8, 0, -8, -2, 4, -8, -8, 0, -8, -8, 4, -8, -8, 4, -8, -8, 0, -8, -8, 0, -2, -8, 4, -8, -8, 0, -2, -8, 4, -2, -8, 4, 2, -8, 0, 2, -8, 0, 8, -8, 4, 2, -8, 0, 8, -8, 4, 8, -8, 4, 8, -8, 0, 8, -2, 0, 8, -8, 4, 8, -2, 0, 8, -2, 4, 8, -2, 6, 8, -2, 4, 8, 2, 4, 8, -2, 6, 8, 2, 4, 8, 2, 6, 8, 8, 6, 8, 8, 4, 8, 8, 4, 2, 8, 6, 8, 8, 4, 2, 8, 6, 2, 8, 6, 2, 8, 4, 2, 8, 4, -2, 8, 6, 2, 8, 4, -2, 8, 6, -2, -8, 6, -2, -8, 4, -2, -8, 4, 2, -8, 6, -2, -8, 4, 2, -8, 6, 2, 8, 6, -2, 8, 4, -2, 8, 4, -8, 8, 6, -2, 8, 4, -8, 8, 6, -8, -8, 6, -8, -8, 4, -8, -8, 4, -2, -8, 6, -8, -8, 4, -2, -8, 6, -2, -2, 6, -8, -2, 4, -8, -8, 4, -8, -2, 6, -8, -8, 4, -8, -8, 6, -8, -8, 6, 8, -8, 4, 8, -2, 4, 8, -8, 6, 8, -2, 4, 8, -2, 6, 8, 2, 6, 8, 2, 4, 8, 8, 4, 8, 2, 6, 8, 8, 4, 8, 8, 6, 8, 8, 6, -8, 8, 4, -8, 2, 4, -8, 8, 6, -8, 2, 4, -8, 2, 6, -8, -8, 6, 2, -8, 4, 2, -8, 4, 8, -8, 6, 2, -8, 4, 8, -8, 6, 8, 2, 6, -8, 2, 4, -8, -2, 4, -8, 2, 6, -8, -2, 4, -8, -2, 6, -8, -4, 8, 1, -8, 6, 2, -8, 6, 8, -4, 8, 1, -8, 6, 8, -4, 8, 4, -4, 8, -1, -8, 6, -2, -8, 6, 2, -4, 8, -1, -8, 6, 2, -4, 8, 1, 4, 8, -4, 8, 6, -8, 2, 6, -8, 4, 8, -4, 2, 6, -8, 1, 8, -4, 1, 8, 4, 2, 6, 8, 8, 6, 8, 1, 8, 4, 8, 6, 8, 4, 8, 4, -4, 8, 4, -8, 6, 8, -2, 6, 8, -4, 8, 4, -2, 6, 8, -1, 8, 4, 4, 8, 1, 8, 6, 2, 8, 6, -2, 4, 8, 1, 8, 6, -2, 4, 8, -1, -1, 8, -4, -2, 6, -8, -8, 6, -8, -1, 8, -4, -8, 6, -8, -4, 8, -4, 4, 8, 4, 8, 6, 8, 8, 6, 2, 4, 8, 4, 8, 6, 2, 4, 8, 1, -1, 8, 4, -2, 6, 8, 2, 6, 8, -1, 8, 4, 2, 6, 8, 1, 8, 4, -4, 8, -4, -8, 6, -8, -8, 6, -2, -4, 8, -4, -8, 6, -2, -4, 8, -1, 4, 8, -1, 8, 6, -2, 8, 6, -8, 4, 8, -1, 8, 6, -8, 4, 8, -4, 1, 8, -4, 2, 6, -8, -2, 6, -8, 1, 8, -4, -2, 6, -8, -1, 8, -4, 4, 8, -1, 4, 8, -4, 1, 8, -4, 4, 8, -1, 1, 8, -4, -1, 8, -4, 4, 8, -1, -1, 8, -4, -4, 8, -4, 4, 8, -1, -4, 8, -4, -4, 8, -1, 4, 8, 1, 4, 8, -1, -4, 8, -1, 4, 8, 1, -4, 8, -1, -4, 8, 1, 4, 8, 4, 4, 8, 1, -4, 8, 1, 4, 8, 4, -4, 8, 1, -4, 8, 4, 1, 8, 4, 4, 8, 4, -4, 8, 4, -1, 8, 4, 1, 8, 4, -4, 8, 4 )
+
+[sub_resource type="CapsuleMesh" id=3]
+
+radius = 1.0
+mid_height = 1.0
+radial_segments = 64
+rings = 8
+
+[sub_resource type="CapsuleShape" id=4]
+
+radius = 1.0
+height = 1.0
 
 [node name="Scene Root" type="Node" index="0"]
 
@@ -62,5 +75,56 @@ disabled = false
 [node name="Player" parent="." index="1" instance=ExtResource( 2 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.169017, 2.56389, 0.154662 )
+
+[node name="TestObject" type="RigidBody" parent="." index="2"]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.72412, 2.09609, -5.81598 )
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+mode = 0
+mass = 3.92
+friction = 1.0
+bounce = 0.02
+gravity_scale = 1.0
+custom_integrator = false
+continuous_cd = false
+contacts_reported = 1
+contact_monitor = false
+sleeping = false
+can_sleep = false
+axis_lock_linear_x = false
+axis_lock_linear_y = false
+axis_lock_linear_z = false
+axis_lock_angular_x = false
+axis_lock_angular_y = false
+axis_lock_angular_z = false
+linear_velocity = Vector3( 0, 0, 0 )
+linear_damp = -1.0
+angular_velocity = Vector3( 0, 0, 0 )
+angular_damp = -1.0
+script = ExtResource( 3 )
+
+[node name="MeshInstance" type="MeshInstance" parent="TestObject" index="0"]
+
+layers = 1
+material_override = null
+cast_shadow = 1
+extra_cull_margin = 0.0
+use_in_baked_light = false
+lod_min_distance = 0.0
+lod_min_hysteresis = 0.0
+lod_max_distance = 0.0
+lod_max_hysteresis = 0.0
+mesh = SubResource( 3 )
+skeleton = NodePath("..")
+material/0 = null
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape" type="CollisionShape" parent="TestObject" index="1"]
+
+shape = SubResource( 4 )
+disabled = false
 
 

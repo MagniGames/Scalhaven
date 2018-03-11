@@ -66,7 +66,11 @@ func _process(delta):
 		running = true
 	else:
 		running = false
-	
+
+    # Firing the weapons
+	if Input.is_action_pressed("fire"):
+		get_node("weapon").get_child(0).fire_bullet()
+
 	if (Input.is_action_just_released("debug")):
 		var allobjects = get_node("/root")
 		getallnodes(allobjects)
