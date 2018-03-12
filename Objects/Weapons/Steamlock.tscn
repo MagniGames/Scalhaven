@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Models/Weapons/Steamlock.gltf" type="PackedScene" id=1]
+[ext_resource path="res://Objects/Weapons/Steamlock.gd" type="Script" id=2]
+
+[node name="Steamlock" instance=ExtResource( 1 )]
+
+script = ExtResource( 2 )
+
+[node name="Wooden_Part_Gun" parent="." index="1"]
+
+transform = Transform( 0.000118776, 0.0999999, -3.48934e-12, -0.0619941, 7.3634e-05, -0.0784648, -0.0784648, 9.31972e-05, 0.0619941, -0.000279427, 0.00642902, -0.00180179 )
+_sections_unfolded = [ "Geometry", "Transform" ]
+
+[node name="Firepoint" type="Spatial" parent="." index="2"]
+
+transform = Transform( 0.000932281, -0.000735563, 0.999999, -0.000774413, 1, 0.00073622, -1, -0.00077498, 0.000931733, 0.325807, 0.730728, -3.37566 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Firetarget" type="Spatial" parent="." index="3"]
+
+transform = Transform( 0.000932281, -0.000735563, 0.999999, -0.000774205, 1, 0.00073622, -0.999999, -0.00077495, 0.000931733, 0.335001, 0.72309, -13.2377 )
+_sections_unfolded = [ "Transform" ]
+
+
