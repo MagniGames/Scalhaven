@@ -129,7 +129,7 @@ disabled = false
 
 [node name="DirectionalLight" type="DirectionalLight" parent="." index="3"]
 
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13.3262, 0 )
+transform = Transform( 1, 0, 0, 0, -0.223316, 0.974746, 0, -0.974746, -0.223316, 0, 13.3262, 0 )
 layers = 1
 light_color = Color( 1, 1, 1, 1 )
 light_energy = 1.0
