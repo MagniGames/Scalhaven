@@ -127,8 +127,7 @@ func _process(delta):
 		guntimer +=1
 
 	if (Input.is_action_just_released("debug")):
-		var allobjects = get_node("/root")
-		getallnodes(allobjects)
+		translation = Vector3(0,2,0)
 	
 	dir.y = 0
 	dir = dir.normalized()
@@ -164,3 +163,6 @@ func _process(delta):
 			guntimer += 1
 		else:
 			guntimer = -1
+	#debug
+	get_node("UI/position").text = "playerpos: " + str(get_global_transform().origin)
+	get_node("UI/seed").text = "seed: " + global.levelseed
