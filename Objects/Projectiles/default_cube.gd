@@ -1,6 +1,6 @@
 extends Spatial
 
-const BULLET_SPEED = 10
+const BULLET_SPEED = 15
 const BULLET_DAMAGE = 15
 
 const KILL_TIMER = 2

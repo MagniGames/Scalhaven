@@ -141,7 +141,7 @@ subdivide_width = 0
 subdivide_height = 0
 subdivide_depth = 0
 
-[node name="Scene Root" type="Node" index="0"]
+[node name="Scene Root" type="Node"]
 
 script = ExtResource( 1 )
 
